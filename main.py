@@ -1,10 +1,10 @@
-class ChatBot(object):
+from chatbot import ChatBot
 
-    def __init__(self):
-        pass
+if __name__ == '__main__':
+    chatbot = ChatBot('Tom')
 
-    def train(self):
-        pass
-
-    def get_response(self):
-        pass
+    chatbot.train([
+        "Hi, can I help you?",
+        "Sure, I'd like to book a flight to Iceland.",
+        "Your flight has been booked."
+    ])
